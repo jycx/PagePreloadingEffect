@@ -1,16 +1,16 @@
-/**
- * main.js
- * http://www.codrops.com
- *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- * 
- * Copyright 2014, Codrops
- * http://www.codrops.com
- */
-(function() {
+requirejs.config({
+  
+    baseUrl: 'js/lib',
+   
+    paths: {
+        app: '../app'
+    }
+});
+// Start the main app logic.
 
-	var support = { animations : Modernizr.cssanimations },
+requirejs(['modernizr.custom','app/pathLoader','app/classie'], function   (modernizr,pathLoader, classie) {
+
+var support = { animations : Modernizr.cssanimations },
 		container = document.getElementById( 'ip-container' ),
 		header = container.querySelector( 'header.ip-header' ),
 		loader = new PathLoader( document.getElementById( 'ip-loader-circle' ) ),
@@ -85,4 +85,7 @@
 
 	init();
 
-})();
+
+    //jQuery, canvas and the app/sub module are all
+    //loaded and can be used here now.
+});
