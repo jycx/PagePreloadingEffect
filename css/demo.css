@@ -27,7 +27,10 @@ a {
 	text-decoration: none;
 	outline: none;
 }
-
+/* Demo colors */
+.demo-2 { background: url(../img/bg.png); }
+.demo-2 a { color: #be4856; }
+ 
 
 
 a:hover, a:focus {
