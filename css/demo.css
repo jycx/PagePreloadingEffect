@@ -14,7 +14,7 @@
 .clearfix:before, .clearfix:after { content: ''; display: table; }
 .clearfix:after { clear: both; }
 
-body {
+ body {
 	background: #333;
 	color: #fff;
 	font-weight: 400;
@@ -101,27 +101,7 @@ a:hover, a:focus {
 	content: "\e004";
 }
 
-/* Demo Buttons Style */
-.codrops-demos {
-	padding: 2em 0 1em;
-	font-size: 0.8em;
-	text-align: center;
-}
 
-.codrops-demos a {
-	display: inline-block;
-	margin: 0.5em 0.75em;
-	line-height: 1.5;
-	outline: none;
-	text-decoration: none;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	font-weight: 700;
-}
-
-.codrops-demos a.current-demo {
-	color: inherit;
-}
 /* Related demos */
 
 .related {
@@ -140,8 +120,11 @@ margin: 1em;
 	
 }
 .content {
+position:relative;
 width: 40%;
 float:left;
+top:30px;
+left:30px;
 }
 .content button{
 position:relative;
