@@ -109,6 +109,10 @@
 /* Animations */
 
 /* Initial animation of header elements */
+/* Demo colors */
+.loading.demo-1 { display:none;
+visibility: hidden }
+ 
 .loading .ip-logo,
 .loading .ip-loader {
 	opacity: 1;
@@ -223,7 +227,10 @@
 	position: absolute;
 }
 
-/* No JS 
+/* No JS */
+.no-js.demo-1{
+display:none;
+visibility: hidden}
 .no-js .ip-header {
 	position: relative;
 	min-height: 0px;
@@ -240,7 +247,7 @@
 .no-js .ip-header .ip-logo svg path {
 	fill: #fff;
 }
-*/
+
 /* Media queries */
 
 @media screen and (max-width: 45em) {

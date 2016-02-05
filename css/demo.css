@@ -29,6 +29,7 @@ a {
 }
 
 
+
 a:hover, a:focus {
 	color: #00f;
 }
@@ -141,6 +142,11 @@ margin: 1em;
 .content {
 width: 40%;
 float:left;
+}
+.content button{
+position:relative;
+top:80px;
+left:150px;
 }
 .picture{
 position:relative;
